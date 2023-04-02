@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+        <title>LAB2_signup</title>
+        <link rel = "stylesheet" type = "text/css" href = "main.css" >
+        <link rel = "https://fonts.googleapis.com/css2?family=Noto+Sans+KR&display=swap" rel="stylesheet">
+    </head>
+
+	
+	<body>
+        <br><div class="titlefont">
+			<p>WELCOME TO Haechan's INTERNET-PROGRAMMING SHOP</p>
+		</div><br><br>
+		<p><button type = "button" class = "title_notbutton" style = "margin-right: 3px;">로그인</button>
+			<button type = "button" style = "margin-left: 3px;" class="title_button"
+            onclick="location.href='./signup.html'">회원가입</button></p>
+		<hr width="100%" color="black" size="2"><br>
+		<p class="bold">회원 정보</p>
+        <form method = "post" autocomplete = "on" action = "/login.html">
+            <p><label>ID:
+                <input type = "text" name = "user_id" placeholder = "ID를 입력하세요" required />
+                </label></p>
+            <p><label>비밀번호:
+                <input type = "text" name = "user_pw" placeholder = "비밀번호를 입력하세요" required />
+                </label></p>
+            <p><button type = "submit" style = "margin-right: -3px;" 
+                class = "login_submit_button">로그인</button>
+                <button type = "reset" style = "margin-left: -3px;"
+                 class = "login_reset_bottuon">취소</button></p>
+        </form><br>
+		<hr width="100%" color="black" size="2">
+	</body>
+</html>

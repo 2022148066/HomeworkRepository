@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+        <title>LAB2_signup</title>
+        <link rel = "stylesheet" type = "text/css" href = "main.css" >
+        <link rel = "https://fonts.googleapis.com/css2?family=Noto+Sans+KR&display=swap" rel="stylesheet">
+    </head>
+
+    <body>
+        <br><div class="titlefont">
+			<p>WELCOME TO 해찬's INTERNET-PROGRAMMING SHOP</p>
+		</div><br>
+		<p><button type = "button" class = "title_button" style = "margin-right: 3px;"
+            onclick = "location.href='./login.html'">로그인</button>
+			<button type = "button" style = "margin-left: 3px;" class="title_notbutton">회원가입</button></p>
+		<hr width = "100%" color = "black" size = "2"><br><br>
+		<p class="bold">회원가입 (<span class="bold red">*</span>은 필수입력)</p>
+        <form method = "get" autocomplete = "on" action = "/login.html">
+            <p><label>이름:
+                <input type = "text" name = "user_name" style = "width: 150px;" autofocus placeholder = "이름을 입력하세요" required />
+                <span class="bold red">*</span>
+                </label></p>
+            <p><label>생년월일:
+				<input type = "date" name = "user_birthdate" />
+                </label></p>
+            <p><label>학년:
+                <input type="number" id="user_grade" required step="1" min="1" max = "4"/>
+            </label></p>
+            <p><label>이메일:
+                <input type = "email" name = "user_email" placeholder = "email@domain.com" />
+                </label></p>
+            <p><label>ID:
+                <input type = "text" name = "user_id" placeholder = "ID를 입력하세요" required />
+                <span class="bold red">*</span>
+                </label></p>
+            <p><label>비밀번호:
+                <input type = "text" name = "user_pw" placeholder = "비밀번호를 입력하세요" required />
+                <span class="bold red">*</span>
+                </label></p>
+            <p><label>비밀번호 확인:
+                <input type = "text" name = "user_pw" placeholder = "비밀번호 확인" required />
+                <span class="bold red">*</span>
+                </label></p>
+            <p><label>전화번호:
+                <input type = "tel" name = "user_tel" placeholder = "ID를 입력하세요" 
+                    pattern = "\d{3}-\d{4}-\d{4}"/>
+                </label></p>
+            <p><label>Github URL:
+				<input type = "url" id = "user_url" style = "width: 200px;" placeholder = "https://github.com/2022000000" />
+                </label></p><br>
+            <p><button type = "submit" style = "margin-right: -3px;" 
+                class = "signup_submit_button">입력 완료</button>
+                <button type = "reset" style = "margin-left: -3px;"
+                 class = "signup_reset_button">초기화</button></p>
+        </form><br>
+		<hr width = "100%" color = "black" size = "2">
+    </body>
